@@ -1,0 +1,11 @@
+[user]
+	name = yutakakinjyo
+	email = yutakakinjyo@gmail.com
+[push]
+	default = simple
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        last = log -1 HEAD
