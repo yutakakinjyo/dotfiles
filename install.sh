@@ -6,6 +6,6 @@ do
     [[ "$f" == ".DS_Store" ]] && continue
 
     echo "$f"
-    ln -s $(cd $(dirname $0) && pwd)/$f $HOME/$f
+    ln -si $(cd $(dirname $0) && pwd)/$f $HOME/$f
 
 done
