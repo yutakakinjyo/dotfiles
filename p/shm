@@ -1,4 +1,4 @@
-git br --merged | grep -v master | xargs git br -d
+git br --merged | grep -v master | grep -v \* | xargs git br -d
 git br | peco | sed -e "s/\* //g" | awk '{print $1}' | xargs git co
 eval $(cat sample.txt | peco)
 hub pull-request
