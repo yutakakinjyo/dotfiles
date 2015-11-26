@@ -1,1 +1,1 @@
-alias p='eval $(cat ~/dotfiles/p/shm | peco)'
+alias p='eval $(cat ~/dotfiles/p/shm | sort | peco)'
