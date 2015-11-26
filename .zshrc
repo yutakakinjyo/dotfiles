@@ -7,7 +7,7 @@ function loadlib() {
     fi
 }
 
-loadlib ./dotfiles/.zshalias
+loadlib ./dotfiles/p/zshalias
 
 # history search
 bindkey '^P' history-beginning-search-backward
