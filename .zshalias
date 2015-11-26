@@ -1,0 +1,1 @@
+alias p='eval $(cat ~/dotfiles/.shm | peco)'

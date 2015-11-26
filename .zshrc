@@ -1,3 +1,14 @@
+# ref http://qiita.com/yu-ichiro/items/6441453321c06484bb22
+
+function loadlib() {
+    lib=${1:?"You have to specify a library file"}
+    if [ -f "$lib" ];then #ファイルの存在を確認
+	. "$lib"
+    fi
+}
+
+loadlib ./dotfiles/.zshalias
+
 # history search
 bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
@@ -27,7 +38,7 @@ zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'c
 
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
 
 
 ### git branch
@@ -45,3 +56,5 @@ precmd() { vcs_info }
 # プロンプト表示    
 PROMPT='%~/%f:[${vcs_info_msg_0_}]: '   
 
+# added by travis gem
+[ -f /Users/yutaka/.travis/travis.sh ] && source /Users/yutaka/.travis/travis.sh
