@@ -3,3 +3,4 @@ alias s='ls ~/dotfiles/p | peco | xargs find ~/dotfiles/p -name | xargs cat | pe
 alias pe='emacs ~/dotfiles/p/"$(ls ~/dotfiles/p | peco)"'
 alias pc='cd ~/dotfiles'
 alias co='git br | peco | sed -e "s/\* //g" | awk "{print $1}" | xargs git co'
+alias b='peco ~/dotfiles/p/html | xargs open'
