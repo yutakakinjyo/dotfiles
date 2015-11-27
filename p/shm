@@ -1,5 +1,7 @@
 git br --merged | grep -v master | grep -v \* | xargs git br -d
 git br | peco | sed -e "s/\* //g" | awk '{print $1}' | xargs git co
 git push origin `git rev-parse --abbrev-ref HEAD`
+git fetch --prune
 hub pull-request
 hub browse
+open /Applications/Docker/Docker\ Quickstart\ Terminal.app

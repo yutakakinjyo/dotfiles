@@ -1,1 +1,4 @@
 (global-auto-revert-mode 1)
+http://emacs.stackexchange.com/questions/281/how-do-i-get-a-fancier-mode-line-that-uses-solid-colors-and-triangles
+brew install cask
+cd ~/emacs.d; cask init;
