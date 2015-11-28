@@ -84,6 +84,16 @@
 ;; M-x menu-bar-mode で表示非表示を切り替えられる
 (menu-bar-mode -1)
 
+(custom-set-faces
+ ;; other faces
+ '(magit-diff-added ((((type tty)) (:foreground "green"))))
+ '(magit-diff-added-highlight ((((type tty)) (:foreground "LimeGreen"))))
+ '(magit-diff-context-highlight ((((type tty)) (:foreground "default"))))
+ '(magit-diff-file-heading ((((type tty)) nil)))
+ '(magit-diff-removed ((((type tty)) (:foreground "red"))))
+ '(magit-diff-removed-highlight ((((type tty)) (:foreground "IndianRed"))))
+  '(magit-section-highlight ((((type tty)) nil))))
+
 ;; http://www.helptouser.com/computer/576953-how-do-i-show-the-git-status-in-the-emacs-bottom-bar.html
 
 (defadvice vc-git-mode-line-string (after plus-minus (file) compile activate)
