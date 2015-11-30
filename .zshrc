@@ -37,9 +37,11 @@ alias gls="gls --color"
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
+# gopath
+export GOPATH="$HOME/go"
 
+# Added by the Heroku Toolbelt
+export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
 
 ### git branch
 
@@ -58,3 +60,4 @@ PROMPT='%~/%f:[${vcs_info_msg_0_}]: '
 
 # added by travis gem
 [ -f /Users/yutaka/.travis/travis.sh ] && source /Users/yutaka/.travis/travis.sh
+
