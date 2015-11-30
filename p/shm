@@ -1,8 +1,8 @@
-git br --merged | grep -v master | grep -v \* | xargs git br -d
 git br | peco | sed -e "s/\* //g" | awk '{print $1}' | xargs git co
 git push origin `git rev-parse --abbrev-ref HEAD`
 git fetch --prune
-git co master; git pull
+git co master; git pull; git br --merged | grep -v master | grep -v \* | xargs git br -d
 hub pull-request
 hub browse
 open /Applications/Docker/Docker\ Quickstart\ Terminal.app
+cd ~/dotfiles; git st; cd -
