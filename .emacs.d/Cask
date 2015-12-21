@@ -28,6 +28,7 @@
 (depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")
+(depends-on "puppet-mode")
 (depends-on "s")
 (depends-on "smart-mode-line")
 (depends-on "smart-mode-line-powerline-theme")
