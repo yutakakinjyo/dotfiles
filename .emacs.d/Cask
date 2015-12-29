@@ -13,6 +13,7 @@
 (depends-on "f")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
+(depends-on "flymake-cppcheck")
 (depends-on "gitconfig-mode")
 (depends-on "gitignore-mode")
 (depends-on "go-mode")
