@@ -1,6 +1,5 @@
 # ref http://qiita.com/yu-ichiro/items/6441453321c06484bb22
 
-# export RBENV_ROOT=$HOME/.rbenv
 eval "$(rbenv init -)"
 
 function loadlib() {
