@@ -45,6 +45,9 @@ export GOPATH="$HOME/go"
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# add go path
+export PATH="$GOPATH/bin:$PATH"
+
 ### git branch
 
 # vcs_infoロード    
