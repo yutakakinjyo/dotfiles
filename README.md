@@ -1,8 +1,8 @@
 # preparation
 
-- cask need to emacs
+need `cask` to emacs
 
-## MackOSX
+## macOS
 
 `brew install cask`
 
