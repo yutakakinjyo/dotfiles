@@ -126,9 +126,9 @@
 
 ;; irony
 
-    (add-hook 'c++-mode-hook 'irony-mode)
-    (add-hook 'c-mode-hook 'irony-mode)
-    (add-hook 'objc-mode-hook 'irony-mode)
+    (add-hook 'c++-mode-hook 'irony-supported-major-modes)
+    (add-hook 'c-mode-hook 'irony-supported-major-modes)
+    (add-hook 'objc-mode-hook 'irony-supported-major-modes)
 
     ;; replace the `completion-at-point' and `complete-symbol' bindings in
     ;; irony-mode's buffers by irony-mode's asynchronous function
@@ -138,7 +138,6 @@
       (define-key irony-mode-map [remap complete-symbol]
         'irony-completion-at-point-async))
     (add-hook 'irony-mode-hook 'my-irony-mode-hook)
-
 
 (provide 'init)
 ;;; init.el ends here
