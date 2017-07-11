@@ -129,10 +129,6 @@
 
 ;; irony
 
-    (add-hook 'c++-mode-hook 'irony-supported-major-modes)
-    (add-hook 'c-mode-hook 'irony-supported-major-modes)
-    (add-hook 'objc-mode-hook 'irony-supported-major-modes)
-
     ;; replace the `completion-at-point' and `complete-symbol' bindings in
     ;; irony-mode's buffers by irony-mode's asynchronous function
     (defun my-irony-mode-hook ()
