@@ -115,6 +115,9 @@
 		       (string-match "^\\([0-9]+\\)\t\\([0-9]+\\)\t" plus-minus)
 		       (format " +%s-%s" (match-string 1 plus-minus) (match-string 2 plus-minus)))))))
 
+;; activate EditorConfig
+(editorconfig-mode 1)
+;;(setq editorconfig-exec-path "/usr/local/bin/editorconfig")
 
 ;; go-mode
 
@@ -139,6 +142,11 @@
         'irony-completion-at-point-async))
     (add-hook 'irony-mode-hook 'my-irony-mode-hook)
 
+
+;; add melpa
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+
 (provide 'init)
 ;;; init.el ends here
 (custom-set-variables
@@ -148,4 +156,4 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (php-mode yasnippet yaml-mode web-mode volatile-highlights use-package smex smartparens smart-mode-line-powerline-theme rinari puppet-mode projectile prodigy popwin pallet nyan-mode multiple-cursors markdown-mode magit irony idle-highlight-mode htmlize helm go-mode gitignore-mode gitconfig-mode flymake-yaml flymake-cppcheck flycheck-cask expand-region exec-path-from-shell drag-stuff csv-mode cmake-mode auto-complete anzu))))
+    (editorconfig-domain-specific editorconfig-charset-extras editorconfig php-mode yasnippet yaml-mode web-mode volatile-highlights use-package smex smartparens smart-mode-line-powerline-theme rinari puppet-mode projectile prodigy popwin pallet nyan-mode multiple-cursors markdown-mode magit irony idle-highlight-mode htmlize helm go-mode gitignore-mode gitconfig-mode flymake-yaml flymake-cppcheck flycheck-cask expand-region exec-path-from-shell drag-stuff csv-mode cmake-mode auto-complete anzu))))

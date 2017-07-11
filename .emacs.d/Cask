@@ -1,5 +1,6 @@
 (source gnu)
 (source melpa)
+(source melpa-stable)
 
 (depends-on "anzu")
 (depends-on "auto-complete")
@@ -9,6 +10,10 @@
 (depends-on "csv-mode")
 (depends-on "dash")
 (depends-on "drag-stuff")
+(depends-on "editorconfig")
+(depends-on "editorconfig-charset-extras")
+(depends-on "editorconfig-custom-majormode")
+(depends-on "editorconfig-domain-specific")
 (depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")
