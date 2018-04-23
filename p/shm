@@ -8,3 +8,4 @@ open /Applications/Docker/Docker\ Quickstart\ Terminal.app
 cd ~/dotfiles; git st; cd -
 cd ~/dotfiles; git ci -am "update"; git push origin master; cd -
 docker rm -f `docker ps -a -q`
+du -ma | sort -rn | head -100
